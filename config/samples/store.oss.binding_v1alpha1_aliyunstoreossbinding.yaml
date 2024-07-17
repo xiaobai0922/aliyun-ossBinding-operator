@@ -1,0 +1,12 @@
+apiVersion: store.oss.binding.com.bailu/v1alpha1
+kind: AliyunStoreOssBinding
+metadata:
+  labels:
+    app.kubernetes.io/name: aliyunstoreossbinding
+    app.kubernetes.io/instance: aliyunstoreossbinding-sample
+    app.kubernetes.io/part-of: aliyun-ossbinding-operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: aliyun-ossbinding-operator
+  name: aliyunstoreossbinding-sample
+spec:
+  # TODO(user): Add fields here

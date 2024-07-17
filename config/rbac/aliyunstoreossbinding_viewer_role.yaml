@@ -1,0 +1,27 @@
+# permissions for end users to view aliyunstoreossbindings.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: clusterrole
+    app.kubernetes.io/instance: aliyunstoreossbinding-viewer-role
+    app.kubernetes.io/component: rbac
+    app.kubernetes.io/created-by: aliyun-ossbinding-operator
+    app.kubernetes.io/part-of: aliyun-ossbinding-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: aliyunstoreossbinding-viewer-role
+rules:
+- apiGroups:
+  - store.oss.binding.com.bailu
+  resources:
+  - aliyunstoreossbindings
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - store.oss.binding.com.bailu
+  resources:
+  - aliyunstoreossbindings/status
+  verbs:
+  - get

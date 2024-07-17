@@ -7,4 +7,14 @@ layout:
 - go.kubebuilder.io/v4
 projectName: aliyun-ossbinding-operator
 repo: github.xiaobai0922.aliyun-ossBinding-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: com.bailu
+  group: store.oss.binding
+  kind: AliyunStoreOssBinding
+  path: github.xiaobai0922.aliyun-ossBinding-operator/api/v1alpha1
+  version: v1alpha1
 version: "3"

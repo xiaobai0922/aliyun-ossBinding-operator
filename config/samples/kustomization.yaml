@@ -1,0 +1,4 @@
+## Append samples of your project ##
+resources:
+- store.oss.binding_v1alpha1_aliyunstoreossbinding.yaml
+#+kubebuilder:scaffold:manifestskustomizesamples
